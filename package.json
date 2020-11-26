@@ -1,0 +1,19 @@
+{
+  "name": "polarhunklubb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/krister1000/polarhundklubb.git",
+  "author": "Krister Hunnes <kristerhunnes@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "css": "node-sass src/main.scss dest/main.css",
+    "watch:css": "yarn css -- -w"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "browser-sync": "^2.26.13",
+    "node-sass": "^4.5.3"
+  }
+}
