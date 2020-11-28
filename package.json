@@ -5,9 +5,10 @@
   "repository": "https://github.com/krister1000/polarhundklubb.git",
   "author": "Krister Hunnes <kristerhunnes@gmail.com>",
   "license": "MIT",
+  "sass": "src/main.scss",
   "scripts": {
     "start": "node index.js",
-    "css": "node-sass src/main.scss dest/main.css",
+    "css": "node-sass src/scss/main.scss dest/main.css",
     "watch:css": "yarn css -- -w"
   },
   "devDependencies": {},

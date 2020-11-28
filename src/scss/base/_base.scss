@@ -1,0 +1,34 @@
+// Header height / padding top body
+$body-header-height: 9.5rem;
+
+// Font smoothing and recalculated rem
+// 1rem = 10px
+* {
+    backface-visibility: hidden;
+}
+
+html {
+    font-family: 'Assistant', sans-serif;
+    font-size: 62.5%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-overflow-scrolling: touch;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    padding-top: $body-header-height;
+}
+
+.container-fluid {
+    max-width: 1440px;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+}

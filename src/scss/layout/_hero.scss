@@ -1,0 +1,15 @@
+.hero {
+    &__home {
+        height: calc(100vh - 30rem);
+        margin-bottom: 25.5rem;
+
+        &--text {
+            padding-top: 4.4rem;
+            margin-top: -17rem;
+            
+            @include media-breakpoint-down(md) {
+                margin-top: -14.4rem;
+            }
+        }
+    }
+}

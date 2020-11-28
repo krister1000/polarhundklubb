@@ -1,0 +1,38 @@
+/*
+---------------------------------------------------------------------------
+SCSS STRUCTURE 7-1
+https://sass-guidelin.es/#architecture
+---------------------------------------------------------------------------
+
+// 1. base
+// 2. vendors
+// 3. utilities 
+// 4. layout
+// 5. components
+// 6. pages
+// 7. themes
+
+-------------------------------------------------------------------------- 
+*/
+// Base
+@import "base/base";
+
+// Vendors
+@import "vendors/bootstrap";
+
+// Utilities
+
+// Layout
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/hero";
+@import "layout/structure";
+@import "layout/footer";
+
+// Components
+@import "components/typo";
+@import "components/buttons";
+@import "components/images";
+
+
+
