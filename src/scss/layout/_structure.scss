@@ -1,8 +1,20 @@
 .section {
     min-height: 35rem;
-    padding-bottom: 7rem;
-
-    &__text {
-
+    padding-bottom: 8rem;
+    
+    &__news {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        margin-bottom: 8rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
+    &__text {
+    }
+
+    &__banner {
+        // margin-bottom: 8rem;
+    }
+
 }

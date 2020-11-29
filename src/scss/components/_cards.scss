@@ -1,0 +1,24 @@
+// Card-types
+
+.card {
+    &__newsitem {
+        display: block;
+        color: $black;
+        background-color: none;
+        margin-bottom: 7rem;
+        
+        h3 {
+            display: inline;
+            color: $black;
+            transition: .25s;
+        }
+
+        &:hover {
+            text-decoration: none;
+
+            h3 {
+                border-bottom: 1px solid $black;
+            }
+        }
+    }
+}
