@@ -4,4 +4,33 @@
         width: 100%;
         object-fit: cover;
     }
+    &__galleryitem {
+        position: relative;
+
+        &--overlay {
+            position: absolute;
+            top: 0; bottom: 0; left: 0; right: 0;
+            background-color: rgba($black, .85);
+            transition: .25s;
+            opacity: 0;
+        }
+        &:hover {
+            > .img__galleryitem--overlay {
+                opacity: 1;
+            }
+        }
+        &--text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 67%;
+            margin: 0;
+
+            font-size: 1.6rem;
+            font-weight: 600;
+            text-align: center;
+            color: $white;
+        }
+    }
 }
