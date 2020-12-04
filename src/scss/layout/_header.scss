@@ -1,24 +1,27 @@
-.header {
-    position: fixed;
+.header, .header__overlay  {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: $body-header-height;
+    top: 0; left: 0; right: 0;
+
+}
+
+.header {
+    position: fixed;
     background-color: $white;
     box-shadow: 0 10px 25px 0 rgba(0,0,0,0.15);
-    top: 0; left: 0; right: 0;
     z-index: $zindex-fixed;
 
-    h1 {
-    }  
-    
     &__logo {
         display: inline-block;
         font-size: 3.4rem;
         line-height: .9;
         font-weight: bold;
+        
         &:hover {
             text-decoration: none;
+            color: inherit;
         }
         @include media-breakpoint-down(lg) {
             font-size: 3.0rem;
@@ -29,6 +32,9 @@
         @include media-breakpoint-down(sm) {
             font-size: 2.3rem;
         }
+    }
+
+    &__overlay {
     }
 }
 

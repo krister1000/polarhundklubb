@@ -27,6 +27,23 @@
         &::after {
             top: .7rem;
         }
+        
+        &--close {
+            // background-color: $white;
+
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                background-color: $white;
+                top: 0;
+            }
+            &::before {
+                transform: rotate(45deg);
+            }
+            &::after {
+                transform: rotate(-45deg);
+            }
+        }
     }
 
     // Menu categories in header
@@ -56,6 +73,30 @@
                     text-decoration: none;
                 }
             }
+        }
+    }
+
+    // Menu overlay
+    &__overlay {
+        position: fixed;
+        height: 100%;
+        background-color: $black;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: $zindex-fixed;
+        transition: .25s;
+        z-index: $zindex-fixed;
+        opacity: 0;
+        visibility: hidden;
+
+        * {
+            color: $white;
+        }
+
+        &--active {
+            opacity: 1;
+            visibility: visible;
         }
     }
 }

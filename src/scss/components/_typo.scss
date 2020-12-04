@@ -8,6 +8,12 @@ html {
     // }    
 }
 
+.display-1 {
+    @include media-breakpoint-down(sm) {
+        font-size: $font-size-base * 4.2;
+    }    
+}
+
 h1, .h1 {
     @include media-breakpoint-down(sm) {
         font-size: $font-size-base * 3.6;

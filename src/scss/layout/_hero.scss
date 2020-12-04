@@ -1,14 +1,25 @@
 .hero {
     &__home {
-        height: calc(100vh - 30rem);
-        margin-bottom: 25.5rem;
+        // height: calc(100vh - 30rem);
+        margin-bottom: 0rem;
+        
+        // @include media-breakpoint-down(sm) {
+        //     height: 35rem;
+        //     margin-bottom: 0;
+        // }
+
 
         &--text {
+            position: relative;
+            display: block;
             padding-top: 4.4rem;
             margin-top: -17rem;
             
             @include media-breakpoint-down(md) {
                 margin-top: -14.4rem;
+            }
+            @include media-breakpoint-down(sm) {
+                margin-top: 0;
             }
         }
     }
@@ -25,6 +36,14 @@
             &--text {
                 padding-bottom: 4rem;
             }
+        }
+    }
+    &__category {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        @include media-breakpoint-down(sm) {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
         }
     }
 }
