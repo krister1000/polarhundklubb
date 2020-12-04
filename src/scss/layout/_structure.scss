@@ -11,8 +11,9 @@
 
 .section {
     padding-bottom: 8rem;
-    
-    &__news {
+
+    // Sections with background color
+    &__news, &__category {
         padding-top: 8rem;
         padding-bottom: 8rem;
         margin-bottom: 8rem;
@@ -20,6 +21,12 @@
             margin-bottom: 0;
         }
     }
+    &__category {
+        padding-bottom: 6rem;
+        background-color: $yellow;
+    }
+    
+    // Sections default
     &__text {}
     &__banner {}
 
@@ -30,13 +37,14 @@
     @include media-breakpoint-down(sm) {
         padding-bottom: 4rem;
 
-        &__news {
+        &__news, &__category {
             padding-top: 4rem;
             padding-bottom: 4rem;
             margin-bottom: 4rem;
             
         }
-        &__gallery {
+
+        &__gallery, &__category {
             padding-bottom: 2rem;
         }
     }

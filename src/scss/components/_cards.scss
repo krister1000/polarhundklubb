@@ -25,4 +25,40 @@
             }
         }
     }
+    &__category {
+        margin-bottom: 2rem;
+        background-color: $white;
+        transition: .25s;
+        cursor: pointer;
+        
+        &--body {
+            padding: 4rem 5rem 6rem;
+            text-align: center;
+        }
+
+        &--image {
+            background-color: $black;
+
+            img {
+                transition: .25s;
+            }
+        }
+        
+        &:hover {
+            box-shadow: 0 0 15px 0 rgba($black, .15);
+            
+            .card__category--image {
+                img {
+                    opacity: .7;
+                }
+            }
+            .card__category--body {
+                .btn {
+                    background-color: $black;
+                    color: $white;
+                }
+            }
+        }
+
+    }
 }
