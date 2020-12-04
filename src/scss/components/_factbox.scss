@@ -2,4 +2,8 @@
     width: 100%;
     border: 5px solid $black;
     padding: 4rem;
+    
+    @include media-breakpoint-down(sm) {
+        padding: 2rem;
+    }
 }

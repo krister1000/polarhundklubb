@@ -15,9 +15,16 @@
     &__news {
         padding-top: 15rem;
         padding-bottom: 8rem;
-
+        
         &--text {
             padding-bottom: 8rem;
+        }
+        @include media-breakpoint-down(sm) {
+            padding-top: 8rem;
+            padding-bottom: 4rem;
+            &--text {
+                padding-bottom: 4rem;
+            }
         }
     }
 }

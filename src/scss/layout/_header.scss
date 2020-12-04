@@ -10,8 +10,25 @@
     z-index: $zindex-fixed;
 
     h1 {
+    }  
+    
+    &__logo {
         display: inline-block;
         font-size: 3.4rem;
+        line-height: .9;
         font-weight: bold;
+        &:hover {
+            text-decoration: none;
+        }
+        @include media-breakpoint-down(lg) {
+            font-size: 3.0rem;
+        }
+        @include media-breakpoint-down(md) {
+            font-size: 2.6rem;
+        }
+        @include media-breakpoint-down(sm) {
+            font-size: 2.3rem;
+        }
     }
 }
+
