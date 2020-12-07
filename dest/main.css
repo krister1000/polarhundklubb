@@ -31,10 +31,6 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth; }
 
-body {
-  overflow-x: hidden;
-  padding-top: 9.5rem; }
-
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -7227,6 +7223,11 @@ a.text-dark:hover, a.text-dark:focus {
 
 .hero__home {
   margin-bottom: 0rem; }
+  .hero__home--img {
+    height: calc(100vh - 34rem); }
+    @media (max-width: 767.98px) {
+      .hero__home--img {
+        height: 25rem; } }
   .hero__home--text {
     position: relative;
     display: block;
@@ -7258,6 +7259,13 @@ a.text-dark:hover, a.text-dark:focus {
     .hero__category {
       padding-top: 4rem;
       padding-bottom: 4rem; } }
+
+body {
+  overflow-x: hidden;
+  padding-top: 9.5rem; }
+  @media (max-width: 767.98px) {
+    body {
+      padding-top: 7rem; } }
 
 
 .container-fluid,
@@ -7465,6 +7473,13 @@ figcaption, .caption {
     color: #fff;
     background-color: #282828;
     border: 2px solid #282828; }
+  .btn__extend::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
 
 .link {
   display: inline;

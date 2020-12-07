@@ -7,7 +7,13 @@
         //     height: 35rem;
         //     margin-bottom: 0;
         // }
-
+        &--img {
+            height: calc(100vh - 34rem);
+            
+            @include media-breakpoint-down(sm) {
+                height: 25rem;
+            }
+        }
 
         &--text {
             position: relative;
