@@ -1755,7 +1755,7 @@ textarea.form-control {
   user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
-  padding: 1.7rem 6rem;
+  padding: 1.5rem 5rem;
   font-size: 2rem;
   line-height: 1.5;
   border-radius: 50rem;
@@ -2452,8 +2452,8 @@ input[type="button"].btn-block {
   border-bottom-left-radius: 0; }
 
 .dropdown-toggle-split {
-  padding-right: 4.5rem;
-  padding-left: 4.5rem; }
+  padding-right: 3.75rem;
+  padding-left: 3.75rem; }
   .dropdown-toggle-split::after,
   .dropup .dropdown-toggle-split::after,
   .dropright .dropdown-toggle-split::after {
@@ -7115,6 +7115,9 @@ a.text-dark:hover, a.text-dark:focus {
   top: 0;
   left: 0;
   right: 0; }
+  @media (max-width: 767.98px) {
+    .header, .header__overlay {
+      height: 7rem; } }
 
 .header {
   position: fixed;
@@ -7123,21 +7126,23 @@ a.text-dark:hover, a.text-dark:focus {
   z-index: 1030; }
   .header__logo {
     display: inline-block;
-    font-size: 3.4rem;
-    line-height: .9;
-    font-weight: bold; }
+    position: relative;
+    width: 40rem;
+    line-height: 0;
+    font-weight: bold;
+    width: 40rem; }
     .header__logo:hover {
       text-decoration: none;
       color: inherit; }
     @media (max-width: 1499.98px) {
       .header__logo {
-        font-size: 3.0rem; } }
+        width: 36rem; } }
     @media (max-width: 991.98px) {
       .header__logo {
-        font-size: 2.6rem; } }
+        width: 32rem; } }
     @media (max-width: 767.98px) {
       .header__logo {
-        font-size: 2.3rem; } }
+        width: 26rem; } }
 
 .menu__icon {
   display: flex;
@@ -7175,24 +7180,32 @@ a.text-dark:hover, a.text-dark:focus {
 
 .menu__header {
   display: flex;
-  margin-bottom: 0; }
+  margin-bottom: 0rem; }
   @media (max-width: 991.98px) {
     .menu__header {
       display: none; } }
   .menu__header li {
     display: inline-block;
     float: left;
-    align-self: center; }
+    align-self: center;
+    margin-right: 5rem;
+    line-height: 0; }
     .menu__header li a {
       font-size: 1.8rem;
       font-weight: bold;
       color: #282828;
-      margin-right: 5rem;
       border-bottom: 1px solid rgba(40, 40, 40, 0);
       transition: .25s border-bottom; }
       .menu__header li a:hover {
         border-bottom: 1px solid #282828;
         text-decoration: none; }
+    @media (max-width: 1499.98px) {
+      .menu__header li {
+        margin-right: 3rem; }
+        .menu__header li:last-child {
+          margin-right: 4rem; }
+        .menu__header li a {
+          font-size: 1.6rem; } }
 
 .menu__overlay {
   position: fixed;
@@ -7292,10 +7305,6 @@ a.text-dark:hover, a.text-dark:focus {
   height: 50rem;
   background-color: #282828; }
 
-@media (max-width: 991.98px) {
-  html {
-    font-size: 60%; } }
-
 @media (max-width: 767.98px) {
   .display-1 {
     font-size: 4.2rem; } }
@@ -7312,9 +7321,11 @@ a.text-dark:hover, a.text-dark:focus {
   h3, .h3 {
     font-size: 2.4rem; } }
 
-@media (max-width: 767.98px) {
-  h4, .h4 {
-    font-size: 2.2rem; } }
+h4, .h4 {
+  line-height: 1.35; }
+  @media (max-width: 767.98px) {
+    h4, .h4 {
+      font-size: 2.2rem; } }
 
 @media (max-width: 767.98px) {
   h5, .h5 {
@@ -7353,6 +7364,7 @@ strong {
   margin: 3rem 0; }
   @media (max-width: 767.98px) {
     .text__divider {
+      width: 4.5rem;
       margin: 1.5rem 0; } }
   .text__divider--sm {
     width: 4.5rem;
@@ -7429,6 +7441,9 @@ figcaption, .caption {
   .card__category--body {
     padding: 3rem 5rem 3rem;
     text-align: center; }
+    @media (max-width: 767.98px) {
+      .card__category--body {
+        padding: 3rem 2rem 3rem; } }
   .card__category--image {
     background-color: #282828; }
     .card__category--image img {
@@ -7442,6 +7457,7 @@ figcaption, .caption {
       color: #fff; }
 
 .btn {
+  font-weight: 600;
   color: #282828;
   background-color: rgba(40, 40, 40, 0);
   border: 2px solid #282828; }
@@ -7452,6 +7468,7 @@ figcaption, .caption {
 
 .link {
   display: inline;
+  font-weight: 600;
   color: #282828;
   text-decoration: none;
   border-bottom: 1px solid #282828;

@@ -1,8 +1,8 @@
 // Typo
 html {
-    @include media-breakpoint-down(md) {
-        font-size: 60%;
-    }
+    // @include media-breakpoint-down(md) {
+    //     font-size: 60%;
+    // }
     // @include media-breakpoint-down(sm) {
     //     font-size: 50%;
     // }    
@@ -30,6 +30,7 @@ h3, .h3 {
     }
 }
 h4, .h4 {
+    line-height: 1.35;
     @include media-breakpoint-down(sm) {
         font-size: $font-size-base * 2.2;
     }
@@ -86,6 +87,7 @@ strong {
         margin: 3rem 0;
         
         @include media-breakpoint-down(sm) {
+            width: 4.5rem;
             margin: 1.5rem 0;
         }
         &--sm {

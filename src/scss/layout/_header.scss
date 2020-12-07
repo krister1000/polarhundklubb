@@ -4,7 +4,10 @@
     align-items: center;
     height: $body-header-height;
     top: 0; left: 0; right: 0;
-
+    
+    @include media-breakpoint-down(sm) {
+        height: $body-header-height - 2.5;
+    }
 }
 
 .header {
@@ -15,22 +18,24 @@
 
     &__logo {
         display: inline-block;
-        font-size: 3.4rem;
-        line-height: .9;
+        position: relative;
+        width: 40rem;
+        line-height: 0;
         font-weight: bold;
+        width: 40rem;
         
         &:hover {
             text-decoration: none;
             color: inherit;
         }
         @include media-breakpoint-down(lg) {
-            font-size: 3.0rem;
+            width: 36rem;
         }
         @include media-breakpoint-down(md) {
-            font-size: 2.6rem;
+            width: 32rem;
         }
         @include media-breakpoint-down(sm) {
-            font-size: 2.3rem;
+            width: 26rem;            
         }
     }
 

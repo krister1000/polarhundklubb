@@ -49,28 +49,41 @@
     // Menu categories in header
     &__header {
         display: flex;
-        margin-bottom: 0;
+        margin-bottom: 0rem;
 
         @include media-breakpoint-down(md) {
             display: none;
         }
-
+        
         li {
             display: inline-block;
             float: left;
             align-self: center;
-
+            margin-right: 5rem;
+            line-height: 0;
+            
             a {
                 font-size: 1.8rem;
                 font-weight: bold;
                 color: $black;
-                margin-right: 5rem;
                 border-bottom: 1px solid rgba($black, 0);
                 transition: .25s border-bottom;
                 
                 &:hover {
                     border-bottom: 1px solid rgba($black, 1);
                     text-decoration: none;
+                }
+            }
+            @include media-breakpoint-down(lg) {
+                margin-right: 3rem;
+                
+                &:last-child {
+                    margin-right: 4rem;
+
+                }
+
+                a {
+                    font-size: 1.6rem;
                 }
             }
         }
