@@ -7234,11 +7234,11 @@ a.text-dark:hover, a.text-dark:focus {
   .menu__secondary--shadowleft {
     left: 0;
     width: 2rem;
-    background-image: linear-gradient(to right, #282828, rgba(40, 40, 40, 0)); }
+    background: linear-gradient(to right, #282828, rgba(40, 40, 40, 0)); }
   .menu__secondary--shadowright {
     right: 0;
     width: 3rem;
-    background-image: linear-gradient(to right, rgba(40, 40, 40, 0), #282828); }
+    background: linear-gradient(to right, rgba(40, 40, 40, 0), #282828); }
   .menu__secondary--placeholder {
     position: fixed;
     top: 9.5rem;
