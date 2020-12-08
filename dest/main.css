@@ -7229,7 +7229,8 @@ a.text-dark:hover, a.text-dark:focus {
   .menu__secondary--shadowleft, .menu__secondary--shadowright {
     position: absolute;
     display: block;
-    height: 4.9rem; }
+    height: 4.9rem;
+    pointer-events: none; }
   .menu__secondary--shadowleft {
     left: 0;
     width: 2rem;
@@ -7249,11 +7250,12 @@ a.text-dark:hover, a.text-dark:focus {
         top: 7rem; } }
   .menu__secondary a {
     display: inline-block;
-    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: 600;
     color: white;
     text-transform: uppercase;
     text-align: center;
-    padding: 14px 8px;
+    padding: 1.4rem .8rem;
     text-decoration: none; }
     .menu__secondary a:first-child {
       padding-left: 3rem; }
