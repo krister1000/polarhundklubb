@@ -1,12 +1,7 @@
 .hero {
     &__home {
-        // height: calc(100vh - 30rem);
         margin-bottom: 0rem;
         
-        // @include media-breakpoint-down(sm) {
-        //     height: 35rem;
-        //     margin-bottom: 0;
-        // }
         &--img {
             height: calc(100vh - 34rem);
             
@@ -40,8 +35,9 @@
             padding-bottom: 8rem;
         }
         @include media-breakpoint-down(sm) {
-            padding-top: 8rem;
+            padding-top: 11rem;
             padding-bottom: 4rem;
+
             &--text {
                 padding-bottom: 4rem;
             }
