@@ -7420,12 +7420,12 @@ body {
   .footer__link--text {
     font-weight: 500; }
   .footer a {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
     font-size: 1.8rem; }
     .footer a:hover {
       color: #fff; }
   .footer hr {
-    border-color: #fff; }
+    border-color: rgba(255, 255, 255, 0.1); }
   .footer ul {
     padding-left: 0;
     list-style: none; }

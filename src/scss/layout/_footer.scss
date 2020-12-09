@@ -27,7 +27,7 @@
     }
     
     a {
-        color: $white;
+        color: rgba($white, .8);
         font-size: 1.8rem;
         
         &:hover {
@@ -36,7 +36,7 @@
     }
 
     hr {
-        border-color: $white;
+        border-color: rgba($white, .1);
     }
 
     ul {
