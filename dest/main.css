@@ -7403,15 +7403,32 @@ body {
           font-size: 2.4rem; } }
 
 .footer {
-  height: 50rem;
   background-color: #282828; }
-  .footer__link {
+  .footer__link--title {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 4rem; }
+    .footer__link--title::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 5.2rem;
+      left: 1rem;
+      height: .1rem;
+      width: 2rem;
+      background-color: #fff; }
+  .footer__link--text {
+    font-weight: 500; }
+  .footer a {
     color: #fff;
-    font-size: 2rem; }
-    .footer__link--title {
-      font-weight: 600; }
-    .footer__link--text {
-      font-weight: 500; }
+    font-size: 1.8rem; }
+    .footer a:hover {
+      color: #fff; }
+  .footer hr {
+    border-color: #fff; }
+  .footer ul {
+    padding-left: 0;
+    list-style: none; }
 
 @media (max-width: 767.98px) {
   .display-1 {
@@ -7570,8 +7587,8 @@ figcaption, .caption {
 .btn {
   font-weight: 600;
   color: #282828;
-  background-color: rgba(40, 40, 40, 0);
-  border: 2px solid #282828; }
+  border: 2px solid #282828;
+  background-color: rgba(40, 40, 40, 0); }
   .btn:hover {
     color: #fff;
     background-color: #282828;
@@ -7583,6 +7600,14 @@ figcaption, .caption {
     right: 0;
     top: 0;
     bottom: 0; }
+
+.footer .btn {
+  color: #fff;
+  border: 2px solid #fff; }
+  .footer .btn:hover {
+    color: #282828;
+    background-color: #fff;
+    border: 2px solid #fff; }
 
 .link {
   display: inline;
