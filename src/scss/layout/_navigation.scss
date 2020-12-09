@@ -135,7 +135,7 @@
         }
         &--shadowright {
             right: 0;
-            width: 3rem;
+            width: 2rem;
             background: linear-gradient(to right, rgba($black,0), rgba($black,1));
         }
 
@@ -155,11 +155,12 @@
             display: inline-block;
             font-size: 1.4rem;
             font-weight: 600;
-            color: white;
+            color: $white;
             text-transform: uppercase;
             text-align: center;
             padding: 1.4rem .8rem;
             text-decoration: none;
+            transition: .25s;
 
             &:first-child {
                 padding-left: 3rem;
@@ -168,8 +169,8 @@
                 padding-right: 3rem;
             }
             &:hover {
-                text-decoration: underline;
                 color: $white;
+                text-decoration: underline;
             }
             @include media-breakpoint-down(sm) {
                 &:first-child {

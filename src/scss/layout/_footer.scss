@@ -4,4 +4,15 @@
     height: 50rem;
     background-color: $black;
 
+    &__link {
+        color: $white;
+        font-size: 2rem;
+        
+        &--title {
+            font-weight: 600;
+        }
+        &--text {
+            font-weight: 500;
+        }
+    }
 }
