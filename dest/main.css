@@ -7454,6 +7454,8 @@ body {
   .footer ul {
     padding-left: 0;
     list-style: none; }
+  .footer__magazinelink {
+    font-size: 2.4rem !important; }
 
 @media (max-width: 767.98px) {
   .display-1 {
