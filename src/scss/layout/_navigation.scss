@@ -183,3 +183,44 @@
         }
     }
 }
+
+// Archive next - previous
+.pagination {
+    
+    .page {
+        &-item {
+            &:first-child, &:last-child {
+                .page-link {
+                    padding-top: .2rem;
+                }
+            }
+            &:first-child {
+                margin-right: 7rem;
+
+            }
+            &:last-child {
+                margin-left: 7rem;
+            }
+            &.disabled {
+                .page-link {
+                    background-color: rgba($white, 0);
+                    border-color: rgba($white, 0);
+                    opacity: .5;
+                }
+            }    
+        }
+        &-link {
+            font-family: $font-family-sans-serif;
+            font-weight: 600;
+            background-color: rgba($white, 0);
+            border-color: rgba($white, 0);
+            color: $black;
+            transition: .25s;
+
+            &:hover {
+                color: $red;
+                text-decoration: underline;
+            }
+        }
+    }
+}

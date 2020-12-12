@@ -7271,6 +7271,31 @@ a.text-dark:hover, a.text-dark:focus {
       .menu__secondary a:last-child {
         padding-right: 2rem; } }
 
+.pagination .page-item:first-child .page-link, .pagination .page-item:last-child .page-link {
+  padding-top: .2rem; }
+
+.pagination .page-item:first-child {
+  margin-right: 7rem; }
+
+.pagination .page-item:last-child {
+  margin-left: 7rem; }
+
+.pagination .page-item.disabled .page-link {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: rgba(255, 255, 255, 0);
+  opacity: .5; }
+
+.pagination .page-link {
+  font-family: "Assistant", sans-serif;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0);
+  border-color: rgba(255, 255, 255, 0);
+  color: #282828;
+  transition: .25s; }
+  .pagination .page-link:hover {
+    color: #AB5943;
+    text-decoration: underline; }
+
 .hero__home {
   margin-bottom: 0rem; }
   .hero__home--img {
