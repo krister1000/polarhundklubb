@@ -128,8 +128,12 @@
                 height: .1rem;
                 width: 2rem;
                 background-color: $white;
+                
+                @include media-breakpoint-down(sm) {
+                    top: 11rem;
+                    left: calc(50% - 1rem);
+                }
             }
-
         }
 
         ul {
@@ -137,6 +141,7 @@
             list-style: none;
             
             li {
+                text-align: center;
                 a {
                     font-size: 2rem;
                     
@@ -147,7 +152,11 @@
                     &:first-child {
                         margin-top: 4rem;
                     }
+                    @include media-breakpoint-down(sm) {
+                        line-height: 2.5;
+                    }
                 }
+
             }
         }
 
