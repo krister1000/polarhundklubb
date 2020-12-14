@@ -1,0 +1,17 @@
+table, .table {
+    border-collapse: inherit;
+
+    tbody {
+        tr {
+            border-top: 1px solid $black;            
+        }
+        th,td {
+            font-size: 1.6rem;
+            padding-left: 0;
+        }
+        th {
+            width: 7rem;
+            font-weight: 600;
+        }
+    }
+}

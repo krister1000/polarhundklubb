@@ -49,7 +49,7 @@
     // Menu categories in header
     &__header {
         display: flex;
-        margin-bottom: 0rem;
+        margin-bottom: .5rem;
 
         @include media-breakpoint-down(md) {
             display: none;
