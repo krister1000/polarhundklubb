@@ -7814,6 +7814,11 @@ a.text-dark:hover, a.text-dark:focus {
     @media (max-width: 767.98px) {
       .header__logo {
         width: 26rem; } }
+  .header__overlay {
+    margin-bottom: 5rem; }
+    @media (max-width: 767.98px) {
+      .header__overlay {
+        margin-bottom: 0; } }
 
 .menu__icon {
   display: flex;
@@ -7917,17 +7922,18 @@ a.text-dark:hover, a.text-dark:focus {
   .menu__overlay ul {
     padding-left: 0;
     list-style: none; }
-    .menu__overlay ul li {
-      text-align: center; }
-      .menu__overlay ul li a {
-        font-size: 2rem; }
-        .menu__overlay ul li a:hover {
-          color: #fff; }
-        .menu__overlay ul li a:first-child {
-          margin-top: 4rem; }
-        @media (max-width: 767.98px) {
-          .menu__overlay ul li a {
-            line-height: 2.5; } }
+    @media (max-width: 767.98px) {
+      .menu__overlay ul li {
+        text-align: center; } }
+    .menu__overlay ul li a {
+      font-size: 2rem; }
+      .menu__overlay ul li a:hover {
+        color: #fff; }
+      .menu__overlay ul li a:first-child {
+        margin-top: 4rem; }
+      @media (max-width: 767.98px) {
+        .menu__overlay ul li a {
+          line-height: 2.5; } }
 
 .menu__secondary {
   overflow: auto;
@@ -8297,6 +8303,14 @@ figcaption, .caption {
     text-decoration: none; }
     .card__newsitem:hover h3 {
       border-bottom: 1px solid #282828; }
+
+.card__person {
+  display: flex; }
+  .card__person--image {
+    width: 17.5rem;
+    margin-right: 3rem; }
+  .card__person--info {
+    align-self: center; }
 
 .card__category {
   margin-bottom: 2rem;

@@ -25,6 +25,20 @@
             }
         }
     }
+    &__person {
+        display: flex;
+        // justify-content: center;
+        // flex-direction: column;
+
+        &--image {
+            width: 17.5rem;
+            margin-right: 3rem;
+        }
+        &--info {
+            align-self: center;
+
+        }
+    }
     &__category {
         margin-bottom: 2rem;
         background-color: $white;

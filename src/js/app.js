@@ -1,5 +1,3 @@
-
-
 const menuButtonOpen = document.querySelector('.menu__icon');
 const menuButtonClose = document.querySelector('.menu__icon--close');
 const headerToggle = document.querySelector('.menu__overlay');

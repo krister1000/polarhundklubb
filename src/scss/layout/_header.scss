@@ -38,8 +38,13 @@
             width: 26rem;            
         }
     }
-
+    
     &__overlay {
+        margin-bottom: 5rem;
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 0;
+        }
     }
 }
 

@@ -141,7 +141,10 @@
             list-style: none;
             
             li {
-                text-align: center;
+                @include media-breakpoint-down(sm) {
+                    text-align: center;
+                }
+
                 a {
                     font-size: 2rem;
                     
