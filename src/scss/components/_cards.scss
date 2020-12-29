@@ -46,10 +46,32 @@
         &--image {
             width: 17.5rem;
             margin-right: 2.7rem;
+            
+            @include media-breakpoint-down(sm) {
+                width: 12rem;
+                margin-right: 2rem;
+            }
         }
         &--info {
             align-self: center;
             line-height: 1.2;
+
+            p {
+                font-size: 2rem;
+                
+                &:first-child {
+                    font-size: 2.4rem;
+                }
+            }
+            @include media-breakpoint-down(sm) {
+                p {
+                    font-size: 1.6rem;
+
+                    &:first-child {
+                        font-size: 2rem;
+                    }
+                }
+            }
         }
     }
     &__category {
