@@ -27,16 +27,29 @@
     }
     &__person {
         display: flex;
-        // justify-content: center;
-        // flex-direction: column;
+
+        &--wrapper {
+            margin-top: 6rem;
+            
+            &:nth-child(1), &:nth-child(2) {
+                margin-top: 0;
+            }
+            @include media-breakpoint-down(sm) {
+                margin-top: 4rem;
+                
+                &:nth-child(2) {
+                    margin-top: 4rem;
+                }
+            }
+        }
 
         &--image {
             width: 17.5rem;
-            margin-right: 3rem;
+            margin-right: 2.7rem;
         }
         &--info {
             align-self: center;
-
+            line-height: 1.2;
         }
     }
     &__category {
