@@ -8013,6 +8013,7 @@ a.text-dark:hover, a.text-dark:focus {
 .hero__home {
   margin-bottom: 0rem; }
   .hero__home--img {
+    position: relative;
     height: calc(100vh - 34rem); }
     @media (max-width: 767.98px) {
       .hero__home--img {
@@ -8020,6 +8021,26 @@ a.text-dark:hover, a.text-dark:focus {
     @media only screen and (max-heigh: 600px) {
       .hero__home--img {
         height: 60rem; } }
+    .hero__home--img .img__fit {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      animation-name: animSlides;
+      animation-duration: 24.0s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-delay: 0;
+      animation-play-state: running;
+      animation-fill-mode: forwards; }
+      .hero__home--img .img__fit:nth-child(2) {
+        animation-delay: 6s; }
+      .hero__home--img .img__fit:nth-child(3) {
+        animation-delay: 12s; }
+      .hero__home--img .img__fit:nth-child(4) {
+        animation-delay: 18s; }
   .hero__home--text {
     position: relative;
     display: block;
@@ -8052,6 +8073,30 @@ a.text-dark:hover, a.text-dark:focus {
     .hero__category {
       padding-top: 4rem;
       padding-bottom: 4rem; } }
+
+@-webkit-keyframes animSlides {
+  0% {
+    opacity: 0; }
+  6% {
+    opacity: 1; }
+  24% {
+    opacity: 1; }
+  30% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes animSlides {
+  0% {
+    opacity: 0; }
+  6% {
+    opacity: 1; }
+  24% {
+    opacity: 1; }
+  30% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
 
 body {
   overflow-x: hidden;
@@ -8310,7 +8355,7 @@ figcaption, .caption {
     margin-top: 6rem; }
     .card__person--wrapper:nth-child(1), .card__person--wrapper:nth-child(2) {
       margin-top: 0; }
-    @media (max-width: 767.98px) {
+    @media (max-width: 991.98px) {
       .card__person--wrapper {
         margin-top: 4rem; }
         .card__person--wrapper:nth-child(2) {
@@ -8422,7 +8467,8 @@ a {
 .img__fit {
   height: 100%;
   width: 100%;
-  object-fit: cover; }
+  object-fit: cover;
+  object-position: 50% 50%; }
 
 .img__galleryitem {
   position: relative; }

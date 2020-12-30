@@ -34,7 +34,7 @@
             &:nth-child(1), &:nth-child(2) {
                 margin-top: 0;
             }
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(md) {
                 margin-top: 4rem;
                 
                 &:nth-child(2) {
@@ -42,7 +42,6 @@
                 }
             }
         }
-
         &--image {
             width: 17.5rem;
             margin-right: 2.7rem;
