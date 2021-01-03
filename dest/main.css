@@ -8074,19 +8074,7 @@ a.text-dark:hover, a.text-dark:focus {
       padding-top: 4rem;
       padding-bottom: 4rem; } }
 
-@-webkit-keyframes animSlides {
-  0% {
-    opacity: 0; }
-  6% {
-    opacity: 1; }
-  24% {
-    opacity: 1; }
-  30% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
-@-moz-keyframes animSlides {
+@keyframes animSlides {
   0% {
     opacity: 0; }
   6% {
@@ -8163,6 +8151,9 @@ body {
   border-radius: 50%;
   transform: rotate(10deg);
   box-shadow: 0 1rem 2.5rem 0 rgba(40, 40, 40, 0.25); }
+  .splash__news {
+    top: 10rem;
+    right: 3rem; }
   .splash__text {
     font-weight: bold;
     text-transform: uppercase;

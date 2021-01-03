@@ -80,6 +80,11 @@ body {
 
     box-shadow: 0 1rem 2.5rem 0 rgba($black, .25);
 
+    &__news {
+        top: 10rem;
+        right: 3rem;
+    }
+
     &__text {
         font-weight: bold;
         text-transform: uppercase;
