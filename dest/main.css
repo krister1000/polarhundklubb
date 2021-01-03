@@ -8123,6 +8123,13 @@ body {
   .section__category {
     padding-bottom: 6rem;
     background-color: #F7F1E9; }
+  .section__blockquote {
+    padding-bottom: 5rem;
+    margin-top: -3rem; }
+    @media (max-width: 767.98px) {
+      .section__blockquote {
+        padding-bottom: 0;
+        margin-top: 0; } }
   .section__gallery {
     padding-bottom: 6rem; }
   @media (max-width: 767.98px) {
