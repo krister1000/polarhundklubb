@@ -7896,7 +7896,8 @@ a.text-dark:hover, a.text-dark:focus {
   opacity: 0;
   visibility: hidden; }
   .menu__overlay * {
-    color: #fff; }
+    color: #fff;
+    fill: #fff; }
   .menu__overlay--active {
     opacity: 1;
     visibility: visible;
