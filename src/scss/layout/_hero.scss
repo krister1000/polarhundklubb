@@ -6,13 +6,14 @@
             position: relative;
             height: calc(100vh - 34rem);
             
+            @media screen and (max-height: 60rem) {
+                height: 60rem;
+            }
+            
             @include media-breakpoint-down(sm) {
                 height: 25rem;
             }
-            @media only screen and (max-heigh: 600px) {
-                height: 60rem;
-            }
-
+            
             .img__fit {
                 opacity:0;
                 position:absolute;

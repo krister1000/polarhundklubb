@@ -8016,12 +8016,12 @@ a.text-dark:hover, a.text-dark:focus {
   .hero__home--img {
     position: relative;
     height: calc(100vh - 34rem); }
+    @media screen and (max-height: 60rem) {
+      .hero__home--img {
+        height: 60rem; } }
     @media (max-width: 767.98px) {
       .hero__home--img {
         height: 25rem; } }
-    @media only screen and (max-heigh: 600px) {
-      .hero__home--img {
-        height: 60rem; } }
     .hero__home--img .img__fit {
       opacity: 0;
       position: absolute;
